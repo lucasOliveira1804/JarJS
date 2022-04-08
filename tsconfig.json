@@ -8,6 +8,6 @@
     "skipLibCheck": true
   },
   "files": [
-    "global.d.ts"
+    "packages/@globals/global.d.ts"
   ]
 }
