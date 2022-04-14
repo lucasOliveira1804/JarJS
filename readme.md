@@ -4,22 +4,20 @@ JarJS is a framework to **facilitate** a creation of modules and creation of cus
 ## Instalation
 
 * npm
-
-    $ npm install jarjs@latest
-
+```console
+$ npm install jarjs@latest
+```
 * yarn
-
-    $ yarn add jarjs
-
+```console
+$ yarn add jarjs
+```
 ## Usage
 
-To use the JarJS fist, create a file .ts, it will be the module. In file write:
+To use the JarJS fist, create a file .js, it will be the module. In file write:
 
-    function MyModule(): void {
-        console.log("I using JarJS!");
-    }
-
-    new Module("MyModule",MyModule);
+```js
+globalThis.module("./myModule","Hello!")
+```
 
 Lets view line per line.
 
@@ -29,9 +27,11 @@ After this, we define the module using the Module class, with the first paramete
 
 To get the module create the index.html file and write:
     
-    import jarJS from "./modules/jarjs.net.js";
-
-    new jarJS.module().get("./MyModule.js");
+```html
+<script>
+    globalThis.get("./myModule",console.log);
+</script>
+```
 
 Ok, this code import the file "jarjs.net.js" and execute a function gamed "get", this function execute the initalizator of the module.
 

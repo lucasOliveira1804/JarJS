@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./default_packages/get.dom.js" decode="jarjsDECODE" usrc="docs.jarjs.com/get.dom/[decode].js?request=true"></script>
+</head>
+<body act-root=true>
+    <button id="button">
+        Passe o mouse em mim!
+    </button>
+    <script>
+        globalThis.get("jarJS/loader",jarjs=>{
+            jarJS.redener("<div></div>");
+        });
+    </script>
+</body>
+</html>
